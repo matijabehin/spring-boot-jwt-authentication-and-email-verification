@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<style>
+    body{
+        background: #FFF7F1;
+        font-family: sans-serif;
+    }
+    .container{
+        width: 90%;
+        margin: auto;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: white;
+    }
+    p{
+        line-height: 30px;
+    }
+    .verify-link{
+        text-decoration: none;
+        color:white;
+        background-color: red;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .align-center{
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<body>
+<div class="container">
+    <h1>Email verification</h1>
+    <p>
+        Hello <span th:text="${username}"></span>,<br>
+        you're almost set to enjoy our website. Simply click the link below to verify your email address and get started.
+        The link expires in 20 minutes.
+    </p>
+    <div class="align-center">
+        <a th:href="${link}" class="verify-link">Verify my email address</a>
+    </div>
+</div>
+</body>
+</html>
