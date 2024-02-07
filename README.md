@@ -1,7 +1,7 @@
 # Backend Web Application with JWT Token Authentication and Email Verification
 This is a straightforward backend web application designed for user authentication using JWT tokens and email verification.
 ## Registration Requirements:
-To register, users needs to provide:
+To register, user needs to provide:
 * email
 * username
 * password
